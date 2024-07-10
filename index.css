@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    font-style: italic;
+    background-color: #eae2e2;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(45, 32, 32, 0.1);
+}
+
+h1, h2 {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+section {
+    border-radius: 10px;
+    border-style:calc(5);
+    margin-bottom: 20px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.editor-options, .mask-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.editor-options button, .mask-options button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.mask-options img {
+   padding-left: 40px;
+    width: 24px;
+    height: 24px;
+}
+
+.canvas-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+canvas {
+    background-color:transparent ;
+    border: 2px solid #ccc;
+    max-width: 100%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+.a{
+   row-gap: 5cm;
+    padding-left: 50%;
+    padding-right: 50%;
+    position: absolute;
+    
+}
+button{
+    background-color: rgb(226, 220, 223);
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(89, 233, 233);
+
+}
+button::hover{
+    color: rgb(55, 135, 135);
+}
+@media screen and (min-width: 480px) {
+    .menu {
+      float: left;
+    }
+  }
+  
