@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://th.bing.com/th?id=OIP.L8UwZLqggtULXUfA1xkF_wHaHa&w=90&h=90&c=1&vt=9&bgcl=04f807&r=0&o=6&pid=5.1" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Add image/icon</h1>
+    </header>
+
+    <main>
+        <section id="imageSelection">
+            <h2>Upload Image</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <div class="image-gallery"></div>
+        </section>
+
+        <section id="imageEditor" >
+            <div class="editor-options">
+                <button id="rotateButton"><i class="fas fa-sync-alt"></i> Rotate</button>
+                <button id="flipButton"><i class="fas fa-arrows-alt-v"></i> Flip</button>
+                <button id="toggleOptionsButton"><i class="fas fa-sliders-h"></i>Crop</button>
+            </div>
+
+            <div id="moreOptions" class="hidden">
+                <div class="mask-options">
+                    <a onclick="setMask('square')"><img src="https://th.bing.com/th/id/OIP.4UcKemymL5MDu5O4suKNpgAAAA?rs=1&pid=ImgDetMain" alt="Square"></a>
+                    <a onclick="setMask('circle')"><img src="https://icon-library.com/images/circle-icon-png/circle-icon-png-27.jpg" alt="Circle"></a>
+                    <a onclick="setMask('heart')"><img src="https://www.simplystamps.com/media/catalog/product/cache/5/image/600x600/9df78eab33525d08d6e5fb8d27136e95/s/o/solid-heart-craft-stamp.png" alt="Heart"></a>
+                    <a onclick="setMask('rectangle')"><img src="https://th.bing.com/th/id/R.c8faafc857951d62cdbee3d402b51004?rik=e3HOvxSlo%2fFQdg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2frectangular-png-forma-rectangular-512.png&ehk=rN8e0wzXP21DpzpCA3KIEOZLzk86VkpwEv5sd0VB2%2fE%3d&risl=&pid=ImgRaw&r=0" alt="Rectangle"></a>
+                </div>
+                <button id="applyButton">Apply</button>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="canvas"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
